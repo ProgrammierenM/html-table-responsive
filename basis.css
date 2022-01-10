@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Basis Tabelle */
+table.basis-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+table.basis-table thead tr {
+  background-color: rebeccapurple;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+table.basis-table th,
+table.basis-table td {
+  padding: 12px 16px;
+}
+
+table.basis-table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+table.basis-table tbody tr:last-of-type {
+  border-bottom: 2px solid rebeccapurple;
+}
+
+table.basis-table tbody tr.active {
+  font-weight: bold;
+  color: rebeccapurple;
+}
+
+/* Variante A */
+.basis-card {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.basis-header {
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.basis-card div {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.basis-card div:last-of-type {
+  border-bottom: 2px solid rebeccapurple;
+}
+
+.basis-card div > span {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 578px) {
+  table.basis-table {
+    display: none;
+  }
+
+  .basis-card {
+    display: block;
+  }
+}
